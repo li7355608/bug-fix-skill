@@ -8,7 +8,7 @@
 
 ## 执行前：项目适配
 
-AI 读取项目根目录 `CLAUDE.md`，获取到以下信息：
+AI 按优先级查找项目上下文文件（`PROJECT-CONTEXT.md` → `CLAUDE.md` → `.cursorrules` → `.github/copilot-instructions.md`），找到 `PROJECT-CONTEXT.md`，获取到以下信息：
 - 技术栈：Java 17 + Spring Boot 3.1 + MyBatis-Plus
 - 测试框架：JUnit5 + Mockito 5.x
 - 配置管理：使用 `@Value` 注入，部分配置在 Nacos 动态管理
